@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>New Client Information</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+    <h1 style="text-align: center; color: #333;">New Client Reached Out Through the Website</h1>
+    <p style="font-size: 18px; color: #555;">We have received the following details from the client:</p>
+    
+    <div style="font-size: 16px; color: #444;">
+        <p><strong>Name:</strong> <span th:text="${name}">[Client Name]</span></p>
+        <p><strong>Email:</strong> <span th:text="${to}">[Client Email]</span></p>
+        <p><strong>Address:</strong> <span th:text="${address}">[Client Address]</span></p>
+        <p><strong>Mobile Number:</strong> <span th:text="${number}">[Client Mobile Number]</span></p>
+        <p><strong>Message:</strong> <span th:text="${message}">[Client Message]</span></p>
+    </div>
+</body>
+
+</html>
