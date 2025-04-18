@@ -1,4 +1,4 @@
-FROM maven:3.9-jdk-21 AS build
+FROM hackyo/maven:3.9-jdk-21 AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
